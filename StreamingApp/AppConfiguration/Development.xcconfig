@@ -1,0 +1,16 @@
+//
+//  Development.xcconfig
+//  Streaming
+//
+//  Created by Nghia Dao on 6/2/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PRODUCT_NAME = Streaming_Dev
+PRODUCT_VERSION = 1
+API_VERSION = v1
+APP_ENVIRONMENT = DEVELOPMENT
+BASE_URL = https:\/\/BaseURL
+LOG_EVENT = YES
