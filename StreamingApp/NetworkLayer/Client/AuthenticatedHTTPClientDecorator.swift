@@ -1,12 +1,12 @@
 //
-//  AuthenticatedHTTPClientHandlerDecorater.swift
+//  AuthenticatedHTTPClientDecorator.swift
 //  Streaming
 //
 //  Created by Nghia Dao on 6/2/25.
 //
 import Foundation
 
-class AuthenticatedHTTPClientHandlerDecorater: HTTPClient {
+class AuthenticatedHTTPClientDecorator: HTTPClient {
     let client: HTTPClient
     let tokenProvider: TokenProvider
 
@@ -18,7 +18,7 @@ class AuthenticatedHTTPClientHandlerDecorater: HTTPClient {
     func sendRequest(_ request: HTTPRequest) async throws -> (Data, HTTPURLResponse) {
         var signedRequest = request
          // Set the Authorization header using the access token
-         signedRequest.headers["Authorization"] = (try? tokenProvider.getAccessToken()) ?? ""
+        signedRequest.headers["Authorization"] = await (try? tokenProvider.getAccessToken()) ?? ""
 
          // Send the request using the client and return the response data
          return try await client.sendRequest(signedRequest)

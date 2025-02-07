@@ -30,16 +30,6 @@ struct HTTPClientHandler: HTTPClient {
         }
 
         return (data, response)
-//        switch response.statusCode {
-//        case 200...299:
-//            return data
-//        case 505:
-//            throw RequestError.tokenExpired
-//        case 401:
-//            throw RequestError.unauthorized
-//        default:
-//            throw RequestError.unexpectedStatusCode(description: "Status Code: \(response.statusCode)")
-//        }
     }
 
 //    public func sendRequest(_ endpoint: Request) -> AnyPublisher<Data, RequestError> {
