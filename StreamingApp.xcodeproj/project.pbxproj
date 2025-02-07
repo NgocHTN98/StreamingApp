@@ -32,9 +32,7 @@
 		048EEC8E2D5614C3003EC1C2 /* DemoNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EEC8D2D5614C2003EC1C2 /* DemoNetworkService.swift */; };
 		048EEC922D5616AD003EC1C2 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 048EEC902D5616AD003EC1C2 /* Development.xcconfig */; };
 		048EEC932D5616AD003EC1C2 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EEC912D5616AD003EC1C2 /* AppConfig.swift */; };
-		18EB32E1CE6814B662C65352 /* Pods_StreamingApp_StreamingAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA56C2CB8604B38D77040497 /* Pods_StreamingApp_StreamingAppUITests.framework */; };
-		BE9F2C5997E8CC3435526065 /* Pods_StreamingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34EDD2B742C99C8126F43327 /* Pods_StreamingAppTests.framework */; };
-		D31F671DFDC6ECE9D9BFE40A /* Pods_StreamingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BB062853F5579E8F1A51CF /* Pods_StreamingApp.framework */; };
+		A31BDC752D566610005CDC6F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A31BDC742D566610005CDC6F /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,15 +82,6 @@
 		048EEC8D2D5614C2003EC1C2 /* DemoNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoNetworkService.swift; sourceTree = "<group>"; };
 		048EEC902D5616AD003EC1C2 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		048EEC912D5616AD003EC1C2 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
-		238DEB04B04B7B40D3A71E9E /* Pods-StreamingAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamingAppTests.debug.xcconfig"; path = "Target Support Files/Pods-StreamingAppTests/Pods-StreamingAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		34EDD2B742C99C8126F43327 /* Pods_StreamingAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreamingAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90EC5C2A384F2005084FF85B /* Pods-StreamingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamingApp.release.xcconfig"; path = "Target Support Files/Pods-StreamingApp/Pods-StreamingApp.release.xcconfig"; sourceTree = "<group>"; };
-		A12B32AFA8AABDB18777A391 /* Pods-StreamingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamingAppTests.release.xcconfig"; path = "Target Support Files/Pods-StreamingAppTests/Pods-StreamingAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		B7417315F7EA724CE2D7C7BD /* Pods-StreamingApp-StreamingAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamingApp-StreamingAppUITests.release.xcconfig"; path = "Target Support Files/Pods-StreamingApp-StreamingAppUITests/Pods-StreamingApp-StreamingAppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		CA56C2CB8604B38D77040497 /* Pods_StreamingApp_StreamingAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreamingApp_StreamingAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2BB062853F5579E8F1A51CF /* Pods_StreamingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreamingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB5160832D17B5721F5CB8A0 /* Pods-StreamingApp-StreamingAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamingApp-StreamingAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-StreamingApp-StreamingAppUITests/Pods-StreamingApp-StreamingAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F21D615F25D061BAD975E6A9 /* Pods-StreamingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamingApp.debug.xcconfig"; path = "Target Support Files/Pods-StreamingApp/Pods-StreamingApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D31F671DFDC6ECE9D9BFE40A /* Pods_StreamingApp.framework in Frameworks */,
+				A31BDC752D566610005CDC6F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +97,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE9F2C5997E8CC3435526065 /* Pods_StreamingAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +104,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18EB32E1CE6814B662C65352 /* Pods_StreamingApp_StreamingAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,9 +116,8 @@
 				048EEC382D560EAE003EC1C2 /* StreamingApp */,
 				048EEC522D560EB0003EC1C2 /* StreamingAppTests */,
 				048EEC5C2D560EB0003EC1C2 /* StreamingAppUITests */,
+				A31BDC732D566610005CDC6F /* Frameworks */,
 				048EEC372D560EAE003EC1C2 /* Products */,
-				A534BEA740B925F48007D0B3 /* Pods */,
-				B29E59BBA917401F0A32D8B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -272,25 +258,9 @@
 			path = AppConfiguration;
 			sourceTree = "<group>";
 		};
-		A534BEA740B925F48007D0B3 /* Pods */ = {
+		A31BDC732D566610005CDC6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F21D615F25D061BAD975E6A9 /* Pods-StreamingApp.debug.xcconfig */,
-				90EC5C2A384F2005084FF85B /* Pods-StreamingApp.release.xcconfig */,
-				EB5160832D17B5721F5CB8A0 /* Pods-StreamingApp-StreamingAppUITests.debug.xcconfig */,
-				B7417315F7EA724CE2D7C7BD /* Pods-StreamingApp-StreamingAppUITests.release.xcconfig */,
-				238DEB04B04B7B40D3A71E9E /* Pods-StreamingAppTests.debug.xcconfig */,
-				A12B32AFA8AABDB18777A391 /* Pods-StreamingAppTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		B29E59BBA917401F0A32D8B7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D2BB062853F5579E8F1A51CF /* Pods_StreamingApp.framework */,
-				CA56C2CB8604B38D77040497 /* Pods_StreamingApp_StreamingAppUITests.framework */,
-				34EDD2B742C99C8126F43327 /* Pods_StreamingAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -302,11 +272,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 048EEC632D560EB0003EC1C2 /* Build configuration list for PBXNativeTarget "StreamingApp" */;
 			buildPhases = (
-				A054D47695F9CB4A6BD7356D /* [CP] Check Pods Manifest.lock */,
 				048EEC322D560EAE003EC1C2 /* Sources */,
 				048EEC332D560EAE003EC1C2 /* Frameworks */,
 				048EEC342D560EAE003EC1C2 /* Resources */,
-				FD24D0594DD8C5773D7DA337 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -388,6 +356,9 @@
 				Base,
 			);
 			mainGroup = 048EEC2D2D560EAE003EC1C2;
+			packageReferences = (
+				A31BDC722D5665F9005CDC6F /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 048EEC372D560EAE003EC1C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -450,28 +421,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A054D47695F9CB4A6BD7356D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StreamingApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C54DCEAE59B983ECAB83B7CA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -509,23 +458,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD24D0594DD8C5773D7DA337 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StreamingApp/Pods-StreamingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StreamingApp/Pods-StreamingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StreamingApp/Pods-StreamingApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -724,7 +656,6 @@
 		};
 		048EEC642D560EB0003EC1C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F21D615F25D061BAD975E6A9 /* Pods-StreamingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -755,7 +686,6 @@
 		};
 		048EEC652D560EB0003EC1C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90EC5C2A384F2005084FF85B /* Pods-StreamingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -786,7 +716,6 @@
 		};
 		048EEC672D560EB0003EC1C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 238DEB04B04B7B40D3A71E9E /* Pods-StreamingAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -806,7 +735,6 @@
 		};
 		048EEC682D560EB0003EC1C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A12B32AFA8AABDB18777A391 /* Pods-StreamingAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -826,7 +754,6 @@
 		};
 		048EEC6A2D560EB0003EC1C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB5160832D17B5721F5CB8A0 /* Pods-StreamingApp-StreamingAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -844,7 +771,6 @@
 		};
 		048EEC6B2D560EB0003EC1C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7417315F7EA724CE2D7C7BD /* Pods-StreamingApp-StreamingAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -900,6 +826,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A31BDC722D5665F9005CDC6F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A31BDC742D566610005CDC6F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A31BDC722D5665F9005CDC6F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		048EEC422D560EAE003EC1C2 /* StreamingApp.xcdatamodeld */ = {
