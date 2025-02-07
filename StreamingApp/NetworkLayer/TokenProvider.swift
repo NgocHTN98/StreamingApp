@@ -4,16 +4,33 @@
 //
 //  Created by Nghia Dao on 6/2/25.
 //
-
-protocol TokenProvider {
-    func getAccessToken() throws -> String
-}
-
-struct DefaultTokenProvider: TokenProvider {
+actor TokenProvider{
     private var accessToken: String?
     private var refreshToken: String?
 
     func getAccessToken() throws -> String {
-        return ""
+        guard let accessToken else {
+            throw TokenError.TokenNotFound
+        }
+        return accessToken
+    }
+
+    func getRefreshToken() throws -> String {
+        guard let refreshToken else {
+            throw TokenError.TokenNotFound
+        }
+        return refreshToken
+    }
+
+
+    func setAccessToken(_ token: String) {
+        self.accessToken = token
     }
 }
+
+enum TokenError: Error {
+    case TokenNotFound
+    case RefreshTokenNotFound
+}
+
+
