@@ -17,8 +17,8 @@ protocol HTTPRequest {
 }
 
 extension HTTPRequest {
-    var baseUrl: String {
-        return AppConfig.baseURL
+    var host: String {
+        return AppConfig.host
     }
 
     func createURLRequest() throws -> URLRequest {

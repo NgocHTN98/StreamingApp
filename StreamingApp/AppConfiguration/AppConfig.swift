@@ -8,9 +8,7 @@
 import Foundation
 
 struct AppConfig {
-    static var baseURL: String {
-        return ""
-        // TODO: MOCK DAta
-        // return Bundle.main.object(forInfoDictionaryKey: "BASE_URL") as? String ?? "https://api.example.com"
+    static var host: String {
+         return Bundle.main.object(forInfoDictionaryKey: "Host") as? String ?? ""
     }
 }

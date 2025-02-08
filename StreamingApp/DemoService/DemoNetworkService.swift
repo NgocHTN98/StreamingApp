@@ -13,7 +13,6 @@ struct MockModel: Codable {
 }
 
 struct DemoRequestProvider: HTTPRequest {
-    var host: String = "apimocha.com"
     var scheme: String = "https"
     var path: String = "/streamingmockitem/example"
     var method: HTTPMethod = .GET
