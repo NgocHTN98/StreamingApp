@@ -84,6 +84,7 @@
 		048EEC902D5616AD003EC1C2 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		048EEC912D5616AD003EC1C2 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		A31BDC7C2D567D08005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryAuthenticatedHTTPClientDecorator.swift; sourceTree = "<group>"; };
+		A31BDCFC2D56FE60005CDC6F /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +149,7 @@
 				048EEC472D560EB0003EC1C2 /* LaunchScreen.storyboard */,
 				048EEC4A2D560EB0003EC1C2 /* Info.plist */,
 				048EEC422D560EAE003EC1C2 /* StreamingApp.xcdatamodeld */,
+				A31BDCFC2D56FE60005CDC6F /* .swiftlint.yml */,
 			);
 			path = StreamingApp;
 			sourceTree = "<group>";
@@ -286,6 +288,7 @@
 				048EEC322D560EAE003EC1C2 /* Sources */,
 				048EEC332D560EAE003EC1C2 /* Frameworks */,
 				048EEC342D560EAE003EC1C2 /* Resources */,
+				A31BDC802D56FCF3005CDC6F /* Swiftlint Script */,
 			);
 			buildRules = (
 			);
@@ -431,6 +434,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A31BDC802D56FCF3005CDC6F /* Swiftlint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swiftlint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Adds support for Apple Silicon brew directory\nif [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint >/dev/null; then\n    echo \"Running SwiftLint autocorrect...\"\n    swiftlint autocorrect --format\n    swiftlint lint\nelse\n    echo \"error: SwiftLint not installed, follow read.me to install\"\n    exit 1\nfi\n";
 		};
 		C54DCEAE59B983ECAB83B7CA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

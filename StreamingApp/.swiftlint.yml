@@ -1,0 +1,18 @@
+included:
+  - Streaming
+
+excluded:
+  - Pods
+
+opt_in_rules:
+    - operator_usage_whitespace
+
+disabled_rules:
+    - indentation_width
+
+
+    # implicitly
+line_length: 150
+
+analyzer_rules:
+  - explicit_self
