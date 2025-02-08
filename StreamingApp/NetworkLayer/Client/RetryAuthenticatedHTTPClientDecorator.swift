@@ -22,13 +22,13 @@ class RetryAuthenticatedHTTPClientDecorator: HTTPClient {
 
     private func sendRequestWithRetries(request: HTTPRequest, retriesLeft: Int) async throws -> (Data, HTTPURLResponse) {
         do {
-            let (data,response) = try await client.sendRequest(request)
-            if RetryHTTPStatus.showRetry(response.statusCode) &&  retriesLeft > 0 {
+            let (data, response) = try await client.sendRequest(request)
+            if RetryHTTPStatus.showRetry(response.statusCode) && retriesLeft > 0 {
                 return try await self.sendRequestWithRetries(request: request, retriesLeft: retriesLeft - 1)
-            }else {
-                return (data,response)
+            } else {
+                return (data, response)
             }
-        }catch {
+        } catch {
             throw error
         }
     }

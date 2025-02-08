@@ -34,6 +34,9 @@
 		048EEC932D5616AD003EC1C2 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EEC912D5616AD003EC1C2 /* AppConfig.swift */; };
 		A31BDC752D566610005CDC6F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A31BDC742D566610005CDC6F /* SnapKit */; };
 		A31BDC7D2D567D2A005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDC7C2D567D08005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift */; };
+		A31BDD032D570233005CDC6F /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A31BDD022D570233005CDC6F /* .swiftlint.yml */; };
+		A31BDD042D570233005CDC6F /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A31BDD022D570233005CDC6F /* .swiftlint.yml */; };
+		A31BDD052D570233005CDC6F /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A31BDD022D570233005CDC6F /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +87,7 @@
 		048EEC902D5616AD003EC1C2 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		048EEC912D5616AD003EC1C2 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		A31BDC7C2D567D08005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryAuthenticatedHTTPClientDecorator.swift; sourceTree = "<group>"; };
-		A31BDCFC2D56FE60005CDC6F /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		A31BDD022D570233005CDC6F /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,7 @@
 		048EEC2D2D560EAE003EC1C2 = {
 			isa = PBXGroup;
 			children = (
+				A31BDD022D570233005CDC6F /* .swiftlint.yml */,
 				048EEC382D560EAE003EC1C2 /* StreamingApp */,
 				048EEC522D560EB0003EC1C2 /* StreamingAppTests */,
 				048EEC5C2D560EB0003EC1C2 /* StreamingAppUITests */,
@@ -149,7 +153,6 @@
 				048EEC472D560EB0003EC1C2 /* LaunchScreen.storyboard */,
 				048EEC4A2D560EB0003EC1C2 /* Info.plist */,
 				048EEC422D560EAE003EC1C2 /* StreamingApp.xcdatamodeld */,
-				A31BDCFC2D56FE60005CDC6F /* .swiftlint.yml */,
 			);
 			path = StreamingApp;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31BDD032D570233005CDC6F /* .swiftlint.yml in Resources */,
 				048EEC492D560EB0003EC1C2 /* LaunchScreen.storyboard in Resources */,
 				048EEC462D560EB0003EC1C2 /* Assets.xcassets in Resources */,
 				048EEC922D5616AD003EC1C2 /* Development.xcconfig in Resources */,
@@ -400,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31BDD042D570233005CDC6F /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31BDD052D570233005CDC6F /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +443,7 @@
 		};
 		A31BDC802D56FCF3005CDC6F /* Swiftlint Script */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
