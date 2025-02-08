@@ -37,6 +37,9 @@
 		A31BDD032D570233005CDC6F /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A31BDD022D570233005CDC6F /* .swiftlint.yml */; };
 		A31BDD042D570233005CDC6F /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A31BDD022D570233005CDC6F /* .swiftlint.yml */; };
 		A31BDD052D570233005CDC6F /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A31BDD022D570233005CDC6F /* .swiftlint.yml */; };
+		A31BDD082D57364C005CDC6F /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD072D573642005CDC6F /* TokenRequest.swift */; };
+		A31BDD0A2D573B0B005CDC6F /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD092D573B09005CDC6F /* Token.swift */; };
+		A31BDD0C2D57416D005CDC6F /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD0B2D574163005CDC6F /* TokenService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,9 @@
 		048EEC912D5616AD003EC1C2 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		A31BDC7C2D567D08005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryAuthenticatedHTTPClientDecorator.swift; sourceTree = "<group>"; };
 		A31BDD022D570233005CDC6F /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		A31BDD072D573642005CDC6F /* TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
+		A31BDD092D573B09005CDC6F /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		A31BDD0B2D574163005CDC6F /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,7 @@
 			children = (
 				048EEC8F2D5616AD003EC1C2 /* AppConfiguration */,
 				048EEC8C2D5614C2003EC1C2 /* DemoService */,
+				A31BDD062D5735D3005CDC6F /* Authorization */,
 				048EEC6C2D56126C003EC1C2 /* NetworkLayer */,
 				048EEC732D56126C003EC1C2 /* Presentation */,
 				048EEC392D560EAE003EC1C2 /* AppDelegate.swift */,
@@ -180,7 +187,6 @@
 				A31BDC7B2D567CD4005CDC6F /* Client */,
 				048EEC6E2D56126C003EC1C2 /* HTTPRequest.swift */,
 				048EEC6F2D56126C003EC1C2 /* HTTPMethod.swift */,
-				048EEC712D56126C003EC1C2 /* TokenProvider.swift */,
 				048EEC722D56126C003EC1C2 /* RequestError.swift */,
 			);
 			path = NetworkLayer;
@@ -279,6 +285,17 @@
 				048EEC702D56126C003EC1C2 /* HTTPClient.swift */,
 			);
 			path = Client;
+			sourceTree = "<group>";
+		};
+		A31BDD062D5735D3005CDC6F /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				A31BDD0B2D574163005CDC6F /* TokenService.swift */,
+				A31BDD092D573B09005CDC6F /* Token.swift */,
+				A31BDD072D573642005CDC6F /* TokenRequest.swift */,
+				048EEC712D56126C003EC1C2 /* TokenProvider.swift */,
+			);
+			path = Authorization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -521,10 +538,13 @@
 				048EEC8B2D56126D003EC1C2 /* OnboardingVC.swift in Sources */,
 				048EEC3A2D560EAE003EC1C2 /* AppDelegate.swift in Sources */,
 				048EEC852D56126D003EC1C2 /* RequestError.swift in Sources */,
+				A31BDD0A2D573B0B005CDC6F /* Token.swift in Sources */,
+				A31BDD082D57364C005CDC6F /* TokenRequest.swift in Sources */,
 				048EEC872D56126D003EC1C2 /* Coordinator.swift in Sources */,
 				048EEC812D56126D003EC1C2 /* HTTPRequest.swift in Sources */,
 				048EEC3C2D560EAE003EC1C2 /* SceneDelegate.swift in Sources */,
 				048EEC802D56126D003EC1C2 /* AuthenticatedHTTPClientDecorator.swift in Sources */,
+				A31BDD0C2D57416D005CDC6F /* TokenService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

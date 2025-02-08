@@ -62,3 +62,20 @@ struct HTTPClientHandler: HTTPClient {
 //            .eraseToAnyPublisher()
 //    }
 }
+
+struct GenericHTTPRequestMapper {
+    static func map<T>(data: Data, response: HTTPURLResponse) throws -> T where T: Decodable {
+        switch response.statusCode {
+        case 200...299:
+            let decoder = JSONDecoder()
+            let decodedResponse = try decoder.decode(T.self, from: data)
+            return decodedResponse
+        case 505:
+            throw RequestError.tokenExpired
+        case 401:
+            throw RequestError.unauthorized
+        default:
+            throw RequestError.unexpectedStatusCode(description: "Status Code: \(response.statusCode)")
+        }
+    }
+}
