@@ -23,7 +23,7 @@ class RetryAuthenticatedHTTPClientDecorator: HTTPClient {
     private func sendRequestWithRetries(request: HTTPRequest, retriesLeft: Int) async throws -> (Data, HTTPURLResponse) {
         do {
             let (data, response) = try await client.sendRequest(request)
-            if RetryHTTPStatus.showRetry(response.statusCode) && retriesLeft > 0 {
+            if RetryHTTPStatus.shouldRetry(response.statusCode) && retriesLeft > 0 {
                 return try await self.sendRequestWithRetries(request: request, retriesLeft: retriesLeft - 1)
             } else {
                 return (data, response)
@@ -42,7 +42,7 @@ enum RetryHTTPStatus: Int {
     case serviceUnavailable = 503 // May be due to temporary service outages or in-progress deployments.
     case gatewayTimeout = 504 // A downstream server (e.g., DNS) didn’t respond in time. Retrying may resolve the issue.
 
-    static func showRetry(_ code: Int) -> Bool {
+    static func shouldRetry(_ code: Int) -> Bool {
         return RetryHTTPStatus(rawValue: code) != nil
     }
 }

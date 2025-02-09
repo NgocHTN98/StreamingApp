@@ -16,11 +16,42 @@ class AuthenticatedHTTPClientDecorator: HTTPClient {
     }
 
     func sendRequest(_ request: HTTPRequest) async throws -> (Data, HTTPURLResponse) {
+        return try await sendRequestWithRefresh(request: request)
+    }
+
+    private func sendRequestWithRefresh(request: HTTPRequest) async throws -> (Data, HTTPURLResponse) {
+        do {
+            var signedRequest = await createSignedRequest(from: request)
+            let (data, response) = try await client.sendRequest(signedRequest)
+
+            if RefreshTokenHTTPStatus.shouldRefresh(response.statusCode) {
+                // 🔄 Wait for the refresh token before retrying
+                try await tokenProvider.refreshToken()
+                signedRequest = await createSignedRequest(from: request)
+
+                return try await client.sendRequest(signedRequest)
+            } else {
+                return (data, response)
+            }
+        } catch {
+            throw error
+        }
+    }
+
+    private func createSignedRequest(from request: HTTPRequest) async -> HTTPRequest {
         var signedRequest = request
          // Set the Authorization header using the access token
         signedRequest.headers["Authorization"] = await (try? tokenProvider.getAccessToken()) ?? ""
 
-         // Send the request using the client and return the response data
-         return try await client.sendRequest(signedRequest)
+        return signedRequest
+    }
+
+}
+
+enum RefreshTokenHTTPStatus: Int {
+    case requestTimeout = 401 // Unauthorized
+
+    static func shouldRefresh(_ code: Int) -> Bool {
+        return RetryHTTPStatus(rawValue: code) != nil
     }
 }

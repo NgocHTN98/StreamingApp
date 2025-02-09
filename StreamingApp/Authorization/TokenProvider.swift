@@ -7,13 +7,12 @@
 actor TokenProvider {
     private var accessToken: String?
     private var refreshToken: String?
-    private let httpClient: HTTPClient
+    private let serivce: TokenService
 
-    // Singleton instance
-    init(accessToken: String? = nil, refreshToken: String? = nil, httpClient: HTTPClient) {
+    init(accessToken: String? = nil, refreshToken: String? = nil, serivce: TokenService) {
         self.accessToken = accessToken
         self.refreshToken = refreshToken
-        self.httpClient = httpClient
+        self.serivce = serivce
     }
 
     /// Retrieves the current access token, throws an error if missing.
@@ -45,14 +44,10 @@ actor TokenProvider {
 
     /// Refreshes the access token using the refresh token.
     func refreshToken() async throws {
-        guard let refreshToken else {
-            throw TokenError.refreshTokenNotFound
-        }
-
         do {
-//            let request = TokenRequest()
-//            let newToken = try await httpClient.sendRequest(request)
-//            self.accessToken = newToken
+            let results = try await serivce.refreshToken()
+            self.accessToken = results.accessToken
+            self.refreshToken = results.refreshToken
         } catch {
             throw TokenError.failedToRefresh
         }
