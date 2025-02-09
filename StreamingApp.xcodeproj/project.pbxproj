@@ -32,6 +32,10 @@
 		048EEC8E2D5614C3003EC1C2 /* DemoNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EEC8D2D5614C2003EC1C2 /* DemoNetworkService.swift */; };
 		048EEC922D5616AD003EC1C2 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 048EEC902D5616AD003EC1C2 /* Development.xcconfig */; };
 		048EEC932D5616AD003EC1C2 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EEC912D5616AD003EC1C2 /* AppConfig.swift */; };
+		04CFB59F2D58A293003FF0D6 /* HaishinKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04CFB59E2D58A293003FF0D6 /* HaishinKit */; };
+		04CFB5A12D58A293003FF0D6 /* MoQTHaishinKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04CFB5A02D58A293003FF0D6 /* MoQTHaishinKit */; };
+		04CFB5A32D58A293003FF0D6 /* SRTHaishinKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04CFB5A22D58A293003FF0D6 /* SRTHaishinKit */; };
+		04CFB5A62D58A3F8003FF0D6 /* LievStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFB5A52D58A3F8003FF0D6 /* LievStreamViewController.swift */; };
 		A31BDC752D566610005CDC6F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A31BDC742D566610005CDC6F /* SnapKit */; };
 		A31BDC7D2D567D2A005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDC7C2D567D08005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift */; };
 		A31BDD032D570233005CDC6F /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A31BDD022D570233005CDC6F /* .swiftlint.yml */; };
@@ -89,6 +93,7 @@
 		048EEC8D2D5614C2003EC1C2 /* DemoNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoNetworkService.swift; sourceTree = "<group>"; };
 		048EEC902D5616AD003EC1C2 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		048EEC912D5616AD003EC1C2 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		04CFB5A52D58A3F8003FF0D6 /* LievStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LievStreamViewController.swift; sourceTree = "<group>"; };
 		A31BDC7C2D567D08005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryAuthenticatedHTTPClientDecorator.swift; sourceTree = "<group>"; };
 		A31BDD022D570233005CDC6F /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		A31BDD072D573642005CDC6F /* TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
@@ -101,6 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CFB5A12D58A293003FF0D6 /* MoQTHaishinKit in Frameworks */,
+				04CFB59F2D58A293003FF0D6 /* HaishinKit in Frameworks */,
+				04CFB5A32D58A293003FF0D6 /* SRTHaishinKit in Frameworks */,
 				A31BDC752D566610005CDC6F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +155,7 @@
 		048EEC382D560EAE003EC1C2 /* StreamingApp */ = {
 			isa = PBXGroup;
 			children = (
+				04CFB5A42D58A325003FF0D6 /* LiveStream */,
 				048EEC8F2D5616AD003EC1C2 /* AppConfiguration */,
 				048EEC8C2D5614C2003EC1C2 /* DemoService */,
 				A31BDD062D5735D3005CDC6F /* Authorization */,
@@ -268,6 +277,14 @@
 				048EEC912D5616AD003EC1C2 /* AppConfig.swift */,
 			);
 			path = AppConfiguration;
+			sourceTree = "<group>";
+		};
+		04CFB5A42D58A325003FF0D6 /* LiveStream */ = {
+			isa = PBXGroup;
+			children = (
+				04CFB5A52D58A3F8003FF0D6 /* LievStreamViewController.swift */,
+			);
+			path = LiveStream;
 			sourceTree = "<group>";
 		};
 		A31BDC732D566610005CDC6F /* Frameworks */ = {
@@ -392,6 +409,7 @@
 			mainGroup = 048EEC2D2D560EAE003EC1C2;
 			packageReferences = (
 				A31BDC722D5665F9005CDC6F /* XCRemoteSwiftPackageReference "SnapKit" */,
+				04CFB59D2D58A293003FF0D6 /* XCRemoteSwiftPackageReference "HaishinKit.swift" */,
 			);
 			productRefGroup = 048EEC372D560EAE003EC1C2 /* Products */;
 			projectDirPath = "";
@@ -543,6 +561,7 @@
 				048EEC872D56126D003EC1C2 /* Coordinator.swift in Sources */,
 				048EEC812D56126D003EC1C2 /* HTTPRequest.swift in Sources */,
 				048EEC3C2D560EAE003EC1C2 /* SceneDelegate.swift in Sources */,
+				04CFB5A62D58A3F8003FF0D6 /* LievStreamViewController.swift in Sources */,
 				048EEC802D56126D003EC1C2 /* AuthenticatedHTTPClientDecorator.swift in Sources */,
 				A31BDD0C2D57416D005CDC6F /* TokenService.swift in Sources */,
 			);
@@ -723,9 +742,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5XD7DD34FG;
+				DEVELOPMENT_TEAM = 6DFG7959WJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StreamingApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Ứng dụng cần truy cập camera để phát trực tiếp.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Ứng dụng cần ghi âm để livestream.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -736,7 +757,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = streamingapp.StreamingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = streaming.StreamingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -754,9 +775,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5XD7DD34FG;
+				DEVELOPMENT_TEAM = 6DFG7959WJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StreamingApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Ứng dụng cần truy cập camera để phát trực tiếp.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Ứng dụng cần ghi âm để livestream.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -767,7 +790,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = streamingapp.StreamingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = streaming.StreamingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -894,6 +917,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		04CFB59D2D58A293003FF0D6 /* XCRemoteSwiftPackageReference "HaishinKit.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shogo4405/HaishinKit.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.3;
+			};
+		};
 		A31BDC722D5665F9005CDC6F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -905,6 +936,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		04CFB59E2D58A293003FF0D6 /* HaishinKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04CFB59D2D58A293003FF0D6 /* XCRemoteSwiftPackageReference "HaishinKit.swift" */;
+			productName = HaishinKit;
+		};
+		04CFB5A02D58A293003FF0D6 /* MoQTHaishinKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04CFB59D2D58A293003FF0D6 /* XCRemoteSwiftPackageReference "HaishinKit.swift" */;
+			productName = MoQTHaishinKit;
+		};
+		04CFB5A22D58A293003FF0D6 /* SRTHaishinKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04CFB59D2D58A293003FF0D6 /* XCRemoteSwiftPackageReference "HaishinKit.swift" */;
+			productName = SRTHaishinKit;
+		};
 		A31BDC742D566610005CDC6F /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A31BDC722D5665F9005CDC6F /* XCRemoteSwiftPackageReference "SnapKit" */;
