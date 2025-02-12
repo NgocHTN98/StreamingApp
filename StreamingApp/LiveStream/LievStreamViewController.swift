@@ -33,6 +33,7 @@ class LiveStreamViewController: UIViewController {
     lazy var btnStart: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.setTitle("Live", for: .normal)
         btn.layer.cornerRadius = 50
         btn.layer.borderWidth = 4
         btn.layer.borderColor = UIColor.gray.cgColor
@@ -44,7 +45,7 @@ class LiveStreamViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLiveStream()
-
+        
     }
     
     func setupLiveStream() {
@@ -64,19 +65,19 @@ class LiveStreamViewController: UIViewController {
             }
         }
         Task {
-          do {
-            try await mixer.attachAudio(AVCaptureDevice.default(for: .audio))
-          } catch {
-            print(error)
-          }
-
-          do {
-            try await mixer.attachVideo(AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back))
-          } catch {
-            print(error)
-          }
-
-          await mixer.addOutput(rtmpStream)
+            do {
+                try await mixer.attachAudio(AVCaptureDevice.default(for: .audio))
+            } catch {
+                print(error)
+            }
+            
+            do {
+                try await mixer.attachVideo(AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back))
+            } catch {
+                print(error)
+            }
+            
+            await mixer.addOutput(rtmpStream)
         }
         
         // Hiển thị video lên màn hình
@@ -110,7 +111,7 @@ class LiveStreamViewController: UIViewController {
             make.left.equalToSuperview().offset(8)
             make.right.equalToSuperview().offset(-8)
             make.height.equalTo(50)
-           
+            
         }
         let avatar = UIButton()
         avatar.backgroundColor = .green
@@ -127,33 +128,40 @@ class LiveStreamViewController: UIViewController {
             
         }
         avatar.layer.cornerRadius = 15
-
+        
         btnViewers.backgroundColor = .clear
         stack.addArrangedSubview(self.btnViewers)
         btnViewers.snp.makeConstraints { make in
             make.top.bottom.equalToSuperview()
         }
+        
     }
     
     @objc func captureTapped() {
         print("Button tapped!")
         self.isPlay = !self.isPlay
         if isPlay {
-            btnStart.layer.cornerRadius = 30
+            btnStart.setTitle("Tắt", for: .normal)
+            Task {
+                print("Connecting to RTMP Server...")
+                try await _ = rtmpConnection.connect("rtmp://a.rtmp.youtube.com/live2")
+                print("Starting live stream...")
+                try await _ = rtmpStream.publish("karh-8dsx-0ma9-h5hm-0uyf")
+                print("✅ Live stream started successfully!")
+            }
         }else {
             Task {
-                btnStart.layer.cornerRadius = 50
-
-              do {
-                  try  await rtmpConnection.connect("rtmp://a.rtmp.youtube.com/live2/{STREAM_KEY}")
-                  try await rtmpStream.publish("test_stream_hn")
-              } catch RTMPConnection.Error.requestFailed(let response) {
-                print(response)
-              } catch RTMPStream.Error.requestFailed(let response) {
-                print(response)
-              } catch {
-                print(error)
-              }
+                btnStart.setTitle("Live", for: .normal)
+                do {
+                    try await _ = rtmpStream.close()
+                    try await rtmpConnection.close()
+                } catch RTMPConnection.Error.requestFailed(let response) {
+                    print(response)
+                } catch RTMPStream.Error.requestFailed(let response) {
+                    print(response)
+                } catch {
+                    print(error)
+                }
             }
         }
         
