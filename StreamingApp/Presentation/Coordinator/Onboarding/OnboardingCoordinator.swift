@@ -26,7 +26,8 @@ class OnboardingCoordinator: NormalCoordinator {
     }
 
     func start() {
+        let liveStream = LiveStreamViewController(viewModel: LiveStreamViewModel())
         let onboardingVC = OnboardingVC()
-        navigationController.pushViewController(onboardingVC, animated: true)
+        navigationController.pushViewController(liveStream, animated: true)
     }
 }

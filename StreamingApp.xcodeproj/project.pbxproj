@@ -35,7 +35,7 @@
 		04CFB59F2D58A293003FF0D6 /* HaishinKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04CFB59E2D58A293003FF0D6 /* HaishinKit */; };
 		04CFB5A12D58A293003FF0D6 /* MoQTHaishinKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04CFB5A02D58A293003FF0D6 /* MoQTHaishinKit */; };
 		04CFB5A32D58A293003FF0D6 /* SRTHaishinKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04CFB5A22D58A293003FF0D6 /* SRTHaishinKit */; };
-		04CFB5A62D58A3F8003FF0D6 /* LievStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFB5A52D58A3F8003FF0D6 /* LievStreamViewController.swift */; };
+		04CFB5A62D58A3F8003FF0D6 /* LiveStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFB5A52D58A3F8003FF0D6 /* LiveStreamViewController.swift */; };
 		A31BDC752D566610005CDC6F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A31BDC742D566610005CDC6F /* SnapKit */; };
 		A31BDC7D2D567D2A005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDC7C2D567D08005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift */; };
 		A31BDD032D570233005CDC6F /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A31BDD022D570233005CDC6F /* .swiftlint.yml */; };
@@ -44,6 +44,10 @@
 		A31BDD082D57364C005CDC6F /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD072D573642005CDC6F /* TokenRequest.swift */; };
 		A31BDD0A2D573B0B005CDC6F /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD092D573B09005CDC6F /* Token.swift */; };
 		A31BDD0C2D57416D005CDC6F /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD0B2D574163005CDC6F /* TokenService.swift */; };
+		FAE958D82D5E38B800169873 /* LiveStreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE958D72D5E38B800169873 /* LiveStreamView.swift */; };
+		FAE958DC2D5E3A3300169873 /* UIControl+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE958DB2D5E3A3300169873 /* UIControl+Combine.swift */; };
+		FAE958DE2D5E3A8800169873 /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE958DD2D5E3A8800169873 /* Publisher+Extension.swift */; };
+		FAE958E12D5E440500169873 /* LiveStreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE958E02D5E440500169873 /* LiveStreamViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,12 +97,16 @@
 		048EEC8D2D5614C2003EC1C2 /* DemoNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoNetworkService.swift; sourceTree = "<group>"; };
 		048EEC902D5616AD003EC1C2 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		048EEC912D5616AD003EC1C2 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
-		04CFB5A52D58A3F8003FF0D6 /* LievStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LievStreamViewController.swift; sourceTree = "<group>"; };
+		04CFB5A52D58A3F8003FF0D6 /* LiveStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamViewController.swift; sourceTree = "<group>"; };
 		A31BDC7C2D567D08005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryAuthenticatedHTTPClientDecorator.swift; sourceTree = "<group>"; };
 		A31BDD022D570233005CDC6F /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		A31BDD072D573642005CDC6F /* TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
 		A31BDD092D573B09005CDC6F /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		A31BDD0B2D574163005CDC6F /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
+		FAE958D72D5E38B800169873 /* LiveStreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamView.swift; sourceTree = "<group>"; };
+		FAE958DB2D5E3A3300169873 /* UIControl+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Combine.swift"; sourceTree = "<group>"; };
+		FAE958DD2D5E3A8800169873 /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extension.swift"; sourceTree = "<group>"; };
+		FAE958E02D5E440500169873 /* LiveStreamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +163,7 @@
 		048EEC382D560EAE003EC1C2 /* StreamingApp */ = {
 			isa = PBXGroup;
 			children = (
-				04CFB5A42D58A325003FF0D6 /* LiveStream */,
+				FAE958D92D5E39C300169873 /* Utils */,
 				048EEC8F2D5616AD003EC1C2 /* AppConfiguration */,
 				048EEC8C2D5614C2003EC1C2 /* DemoService */,
 				A31BDD062D5735D3005CDC6F /* Authorization */,
@@ -207,6 +215,7 @@
 				048EEC742D56126C003EC1C2 /* Coordinator */,
 				048EEC7B2D56126D003EC1C2 /* Factory */,
 				048EEC7E2D56126D003EC1C2 /* Onboarding */,
+				04CFB5A42D58A325003FF0D6 /* LiveStream */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -282,7 +291,9 @@
 		04CFB5A42D58A325003FF0D6 /* LiveStream */ = {
 			isa = PBXGroup;
 			children = (
-				04CFB5A52D58A3F8003FF0D6 /* LievStreamViewController.swift */,
+				FAE958DF2D5E43EC00169873 /* ViewModel */,
+				FAE958D62D5E389B00169873 /* View */,
+				FAE958D52D5E388700169873 /* ViewController */,
 			);
 			path = LiveStream;
 			sourceTree = "<group>";
@@ -313,6 +324,47 @@
 				048EEC712D56126C003EC1C2 /* TokenProvider.swift */,
 			);
 			path = Authorization;
+			sourceTree = "<group>";
+		};
+		FAE958D52D5E388700169873 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04CFB5A52D58A3F8003FF0D6 /* LiveStreamViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FAE958D62D5E389B00169873 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAE958D72D5E38B800169873 /* LiveStreamView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAE958D92D5E39C300169873 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FAE958DA2D5E39D200169873 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FAE958DA2D5E39D200169873 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAE958DB2D5E3A3300169873 /* UIControl+Combine.swift */,
+				FAE958DD2D5E3A8800169873 /* Publisher+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FAE958DF2D5E43EC00169873 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAE958E02D5E440500169873 /* LiveStreamViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,7 +531,7 @@
 		A31BDC802D56FCF3005CDC6F /* Swiftlint Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -541,8 +593,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE958E12D5E440500169873 /* LiveStreamViewModel.swift in Sources */,
 				048EEC862D56126D003EC1C2 /* AppCoordinator.swift in Sources */,
 				048EEC442D560EAE003EC1C2 /* StreamingApp.xcdatamodeld in Sources */,
+				FAE958DE2D5E3A8800169873 /* Publisher+Extension.swift in Sources */,
 				A31BDC7D2D567D2A005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift in Sources */,
 				048EEC3E2D560EAE003EC1C2 /* ViewController.swift in Sources */,
 				048EEC882D56126D003EC1C2 /* OnboardingCoordinator.swift in Sources */,
@@ -561,8 +615,10 @@
 				048EEC872D56126D003EC1C2 /* Coordinator.swift in Sources */,
 				048EEC812D56126D003EC1C2 /* HTTPRequest.swift in Sources */,
 				048EEC3C2D560EAE003EC1C2 /* SceneDelegate.swift in Sources */,
-				04CFB5A62D58A3F8003FF0D6 /* LievStreamViewController.swift in Sources */,
+				04CFB5A62D58A3F8003FF0D6 /* LiveStreamViewController.swift in Sources */,
 				048EEC802D56126D003EC1C2 /* AuthenticatedHTTPClientDecorator.swift in Sources */,
+				FAE958D82D5E38B800169873 /* LiveStreamView.swift in Sources */,
+				FAE958DC2D5E3A3300169873 /* UIControl+Combine.swift in Sources */,
 				A31BDD0C2D57416D005CDC6F /* TokenService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
