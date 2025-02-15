@@ -44,6 +44,8 @@
 		A31BDD082D57364C005CDC6F /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD072D573642005CDC6F /* TokenRequest.swift */; };
 		A31BDD0A2D573B0B005CDC6F /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD092D573B09005CDC6F /* Token.swift */; };
 		A31BDD0C2D57416D005CDC6F /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD0B2D574163005CDC6F /* TokenService.swift */; };
+		A31BDD1E2D604901005CDC6F /* GenericHTTPResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD1D2D6048EE005CDC6F /* GenericHTTPResponseMapper.swift */; };
+		A31BDD202D60493D005CDC6F /* HTTPResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD1F2D60492C005CDC6F /* HTTPResponseStatus.swift */; };
 		FAE958D82D5E38B800169873 /* LiveStreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE958D72D5E38B800169873 /* LiveStreamView.swift */; };
 		FAE958DC2D5E3A3300169873 /* UIControl+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE958DB2D5E3A3300169873 /* UIControl+Combine.swift */; };
 		FAE958DE2D5E3A8800169873 /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE958DD2D5E3A8800169873 /* Publisher+Extension.swift */; };
@@ -103,6 +105,8 @@
 		A31BDD072D573642005CDC6F /* TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
 		A31BDD092D573B09005CDC6F /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		A31BDD0B2D574163005CDC6F /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
+		A31BDD1D2D6048EE005CDC6F /* GenericHTTPResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericHTTPResponseMapper.swift; sourceTree = "<group>"; };
+		A31BDD1F2D60492C005CDC6F /* HTTPResponseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseStatus.swift; sourceTree = "<group>"; };
 		FAE958D72D5E38B800169873 /* LiveStreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamView.swift; sourceTree = "<group>"; };
 		FAE958DB2D5E3A3300169873 /* UIControl+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Combine.swift"; sourceTree = "<group>"; };
 		FAE958DD2D5E3A8800169873 /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extension.swift"; sourceTree = "<group>"; };
@@ -201,6 +205,8 @@
 		048EEC6C2D56126C003EC1C2 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				A31BDD1F2D60492C005CDC6F /* HTTPResponseStatus.swift */,
+				A31BDD1D2D6048EE005CDC6F /* GenericHTTPResponseMapper.swift */,
 				A31BDC7B2D567CD4005CDC6F /* Client */,
 				048EEC6E2D56126C003EC1C2 /* HTTPRequest.swift */,
 				048EEC6F2D56126C003EC1C2 /* HTTPMethod.swift */,
@@ -595,6 +601,7 @@
 			files = (
 				FAE958E12D5E440500169873 /* LiveStreamViewModel.swift in Sources */,
 				048EEC862D56126D003EC1C2 /* AppCoordinator.swift in Sources */,
+				A31BDD202D60493D005CDC6F /* HTTPResponseStatus.swift in Sources */,
 				048EEC442D560EAE003EC1C2 /* StreamingApp.xcdatamodeld in Sources */,
 				FAE958DE2D5E3A8800169873 /* Publisher+Extension.swift in Sources */,
 				A31BDC7D2D567D2A005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift in Sources */,
@@ -616,6 +623,7 @@
 				048EEC812D56126D003EC1C2 /* HTTPRequest.swift in Sources */,
 				048EEC3C2D560EAE003EC1C2 /* SceneDelegate.swift in Sources */,
 				04CFB5A62D58A3F8003FF0D6 /* LiveStreamViewController.swift in Sources */,
+				A31BDD1E2D604901005CDC6F /* GenericHTTPResponseMapper.swift in Sources */,
 				048EEC802D56126D003EC1C2 /* AuthenticatedHTTPClientDecorator.swift in Sources */,
 				FAE958D82D5E38B800169873 /* LiveStreamView.swift in Sources */,
 				FAE958DC2D5E3A3300169873 /* UIControl+Combine.swift in Sources */,

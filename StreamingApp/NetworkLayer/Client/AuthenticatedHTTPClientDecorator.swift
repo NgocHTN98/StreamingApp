@@ -24,7 +24,8 @@ class AuthenticatedHTTPClientDecorator: HTTPClient {
             var signedRequest = await createSignedRequest(from: request)
             let (data, response) = try await client.sendRequest(signedRequest)
 
-            if RefreshTokenHTTPStatus.shouldRefresh(response.statusCode) {
+            let status = HTTPResponseStatus(rawValue: response.statusCode)  ?? .unknown
+            if status.shouldRefresh() {
                 // 🔄 Wait for the refresh token before retrying
                 try await tokenProvider.refreshToken()
                 signedRequest = await createSignedRequest(from: request)
@@ -46,12 +47,4 @@ class AuthenticatedHTTPClientDecorator: HTTPClient {
         return signedRequest
     }
 
-}
-
-enum RefreshTokenHTTPStatus: Int {
-    case requestTimeout = 401 // Unauthorized
-
-    static func shouldRefresh(_ code: Int) -> Bool {
-        return RetryHTTPStatus(rawValue: code) != nil
-    }
 }
