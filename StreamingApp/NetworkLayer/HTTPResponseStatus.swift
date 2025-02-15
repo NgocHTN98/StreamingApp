@@ -5,7 +5,7 @@
 //  Created by Nghia Dao on 15/2/25.
 //
 
-enum HTTPResponseStatus: Int {
+enum HTTPResponseStatus: Int, CaseIterable {
 
     case success = 200
     // MARK: retry case
@@ -25,12 +25,13 @@ enum HTTPResponseStatus: Int {
     // MARK: unknown error
     case unknown = -1
 
-    init?(rawValue: Int) {
-        switch rawValue {
-        case 200...299:
+    init(rawValue: Int) {
+        if (200...299).contains(rawValue) {
             self = .success
-        default:
-            self = HTTPResponseStatus(rawValue: rawValue) ?? .unknown
+        } else if let knownStatus = HTTPResponseStatus.allCases.first(where: { $0.rawValue == rawValue }) {
+            self = knownStatus
+        } else {
+            self = .unknown
         }
     }
 
