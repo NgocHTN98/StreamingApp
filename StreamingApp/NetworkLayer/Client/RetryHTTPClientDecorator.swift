@@ -28,13 +28,8 @@ class RetryHTTPClientDecorator: HTTPClient {
             if retriesLeft > 0, status.shouldRetry() {
                 return try await sendRequestWithRetries(request: request, retriesLeft: retriesLeft - 1)
             }
-
-            if retriesLeft <= 0 {
-                throw RequestError.failRetries
-            }
-
             return (data, response)
-            
+
         } catch {
             throw error
         }
