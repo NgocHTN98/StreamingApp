@@ -60,15 +60,10 @@ actor DefaultTokenProvider: TokenProvider {
         }
     }
 
-    // Token error handling
-    enum TokenError: Error {
-        case tokenNotFound
-        case refreshTokenNotFound
-        case failedToRefresh
-    }
 }
 
 enum TokenError: Error {
     case tokenNotFound
     case refreshTokenNotFound
+    case failedToRefresh
 }
