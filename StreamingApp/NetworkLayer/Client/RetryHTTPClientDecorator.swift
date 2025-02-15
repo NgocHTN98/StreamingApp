@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RetryAuthenticatedHTTPClientDecorator: HTTPClient {
+class RetryHTTPClientDecorator: HTTPClient {
     let client: HTTPClient
     let maxRetries: Int
 
