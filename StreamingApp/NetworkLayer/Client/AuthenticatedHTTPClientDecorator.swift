@@ -24,7 +24,7 @@ class AuthenticatedHTTPClientDecorator: HTTPClient {
             var signedRequest = await createSignedRequest(from: request)
             let (data, response) = try await client.sendRequest(signedRequest)
 
-            let status = HTTPResponseStatus(rawValue: response.statusCode)  ?? .unknown
+            let status = HTTPResponseStatus(rawValue: response.statusCode) 
             if status.shouldRefresh() {
                 // 🔄 Wait for the refresh token before retrying
                 try await tokenProvider.refreshToken()
