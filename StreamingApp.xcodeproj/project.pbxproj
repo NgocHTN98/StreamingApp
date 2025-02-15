@@ -14,9 +14,6 @@
 		048EEC442D560EAE003EC1C2 /* StreamingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 048EEC422D560EAE003EC1C2 /* StreamingApp.xcdatamodeld */; };
 		048EEC462D560EB0003EC1C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048EEC452D560EB0003EC1C2 /* Assets.xcassets */; };
 		048EEC492D560EB0003EC1C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048EEC472D560EB0003EC1C2 /* LaunchScreen.storyboard */; };
-		048EEC542D560EB0003EC1C2 /* StreamingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EEC532D560EB0003EC1C2 /* StreamingAppTests.swift */; };
-		048EEC5E2D560EB0003EC1C2 /* StreamingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EEC5D2D560EB0003EC1C2 /* StreamingAppUITests.swift */; };
-		048EEC602D560EB0003EC1C2 /* StreamingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EEC5F2D560EB0003EC1C2 /* StreamingAppUITestsLaunchTests.swift */; };
 		048EEC802D56126D003EC1C2 /* AuthenticatedHTTPClientDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EEC6D2D56126C003EC1C2 /* AuthenticatedHTTPClientDecorator.swift */; };
 		048EEC812D56126D003EC1C2 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EEC6E2D56126C003EC1C2 /* HTTPRequest.swift */; };
 		048EEC822D56126D003EC1C2 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EEC6F2D56126C003EC1C2 /* HTTPMethod.swift */; };
@@ -44,8 +41,10 @@
 		A31BDD082D57364C005CDC6F /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD072D573642005CDC6F /* TokenRequest.swift */; };
 		A31BDD0A2D573B0B005CDC6F /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD092D573B09005CDC6F /* Token.swift */; };
 		A31BDD0C2D57416D005CDC6F /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD0B2D574163005CDC6F /* TokenService.swift */; };
+		A31BDD172D5899E1005CDC6F /* AuthenticatedHTTPClientDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD162D5899E1005CDC6F /* AuthenticatedHTTPClientDecoratorTests.swift */; };
 		A31BDD1E2D604901005CDC6F /* GenericHTTPResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD1D2D6048EE005CDC6F /* GenericHTTPResponseMapper.swift */; };
 		A31BDD202D60493D005CDC6F /* HTTPResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD1F2D60492C005CDC6F /* HTTPResponseStatus.swift */; };
+		A31BDD242D60539D005CDC6F /* HTTPClientTestsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD232D605399005CDC6F /* HTTPClientTestsHelper.swift */; };
 		FAE958D82D5E38B800169873 /* LiveStreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE958D72D5E38B800169873 /* LiveStreamView.swift */; };
 		FAE958DC2D5E3A3300169873 /* UIControl+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE958DB2D5E3A3300169873 /* UIControl+Combine.swift */; };
 		FAE958DE2D5E3A8800169873 /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE958DD2D5E3A8800169873 /* Publisher+Extension.swift */; };
@@ -80,10 +79,7 @@
 		048EEC482D560EB0003EC1C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		048EEC4A2D560EB0003EC1C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		048EEC4F2D560EB0003EC1C2 /* StreamingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreamingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		048EEC532D560EB0003EC1C2 /* StreamingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingAppTests.swift; sourceTree = "<group>"; };
 		048EEC592D560EB0003EC1C2 /* StreamingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreamingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		048EEC5D2D560EB0003EC1C2 /* StreamingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingAppUITests.swift; sourceTree = "<group>"; };
-		048EEC5F2D560EB0003EC1C2 /* StreamingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		048EEC6D2D56126C003EC1C2 /* AuthenticatedHTTPClientDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticatedHTTPClientDecorator.swift; sourceTree = "<group>"; };
 		048EEC6E2D56126C003EC1C2 /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		048EEC6F2D56126C003EC1C2 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -105,8 +101,11 @@
 		A31BDD072D573642005CDC6F /* TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
 		A31BDD092D573B09005CDC6F /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		A31BDD0B2D574163005CDC6F /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
+		A31BDD162D5899E1005CDC6F /* AuthenticatedHTTPClientDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedHTTPClientDecoratorTests.swift; sourceTree = "<group>"; };
+		A31BDD182D589B38005CDC6F /* StreamingAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StreamingAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		A31BDD1D2D6048EE005CDC6F /* GenericHTTPResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericHTTPResponseMapper.swift; sourceTree = "<group>"; };
 		A31BDD1F2D60492C005CDC6F /* HTTPResponseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseStatus.swift; sourceTree = "<group>"; };
+		A31BDD232D605399005CDC6F /* HTTPClientTestsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientTestsHelper.swift; sourceTree = "<group>"; };
 		FAE958D72D5E38B800169873 /* LiveStreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamView.swift; sourceTree = "<group>"; };
 		FAE958DB2D5E3A3300169873 /* UIControl+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Combine.swift"; sourceTree = "<group>"; };
 		FAE958DD2D5E3A8800169873 /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extension.swift"; sourceTree = "<group>"; };
@@ -188,7 +187,9 @@
 		048EEC522D560EB0003EC1C2 /* StreamingAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				048EEC532D560EB0003EC1C2 /* StreamingAppTests.swift */,
+				A31BDD232D605399005CDC6F /* HTTPClientTestsHelper.swift */,
+				A31BDD182D589B38005CDC6F /* StreamingAppTests-Bridging-Header.h */,
+				A31BDD162D5899E1005CDC6F /* AuthenticatedHTTPClientDecoratorTests.swift */,
 			);
 			path = StreamingAppTests;
 			sourceTree = "<group>";
@@ -196,8 +197,6 @@
 		048EEC5C2D560EB0003EC1C2 /* StreamingAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				048EEC5D2D560EB0003EC1C2 /* StreamingAppUITests.swift */,
-				048EEC5F2D560EB0003EC1C2 /* StreamingAppUITestsLaunchTests.swift */,
 			);
 			path = StreamingAppUITests;
 			sourceTree = "<group>";
@@ -398,7 +397,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 048EEC662D560EB0003EC1C2 /* Build configuration list for PBXNativeTarget "StreamingAppTests" */;
 			buildPhases = (
-				F5268DE06487579466BB1BC3 /* [CP] Check Pods Manifest.lock */,
 				048EEC4B2D560EB0003EC1C2 /* Sources */,
 				048EEC4C2D560EB0003EC1C2 /* Frameworks */,
 				048EEC4D2D560EB0003EC1C2 /* Resources */,
@@ -417,11 +415,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 048EEC692D560EB0003EC1C2 /* Build configuration list for PBXNativeTarget "StreamingAppUITests" */;
 			buildPhases = (
-				43D86724F3A097579BCBAE32 /* [CP] Check Pods Manifest.lock */,
 				048EEC552D560EB0003EC1C2 /* Sources */,
 				048EEC562D560EB0003EC1C2 /* Frameworks */,
 				048EEC572D560EB0003EC1C2 /* Resources */,
-				C54DCEAE59B983ECAB83B7CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -448,6 +444,7 @@
 					};
 					048EEC4E2D560EB0003EC1C2 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1600;
 						TestTargetID = 048EEC352D560EAE003EC1C2;
 					};
 					048EEC582D560EB0003EC1C2 = {
@@ -512,28 +509,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		43D86724F3A097579BCBAE32 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StreamingApp-StreamingAppUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A31BDC802D56FCF3005CDC6F /* Swiftlint Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -552,45 +527,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Adds support for Apple Silicon brew directory\nif [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint >/dev/null; then\n    echo \"Running SwiftLint autocorrect...\"\n    swiftlint autocorrect --format\n    swiftlint lint\nelse\n    echo \"error: SwiftLint not installed, follow read.me to install\"\n    exit 1\nfi\n";
-		};
-		C54DCEAE59B983ECAB83B7CA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StreamingApp-StreamingAppUITests/Pods-StreamingApp-StreamingAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StreamingApp-StreamingAppUITests/Pods-StreamingApp-StreamingAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StreamingApp-StreamingAppUITests/Pods-StreamingApp-StreamingAppUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F5268DE06487579466BB1BC3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StreamingAppTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -635,7 +571,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				048EEC542D560EB0003EC1C2 /* StreamingAppTests.swift in Sources */,
+				A31BDD242D60539D005CDC6F /* HTTPClientTestsHelper.swift in Sources */,
+				A31BDD172D5899E1005CDC6F /* AuthenticatedHTTPClientDecoratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,8 +580,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				048EEC5E2D560EB0003EC1C2 /* StreamingAppUITests.swift in Sources */,
-				048EEC602D560EB0003EC1C2 /* StreamingAppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -869,16 +804,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 048EEC902D5616AD003EC1C2 /* Development.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XD7DD34FG;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = streamingapp.StreamingAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "StreamingAppTests/StreamingAppTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StreamingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StreamingApp";
@@ -888,16 +826,18 @@
 		048EEC682D560EB0003EC1C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XD7DD34FG;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = streamingapp.StreamingAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "StreamingAppTests/StreamingAppTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StreamingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StreamingApp";
@@ -908,9 +848,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 048EEC902D5616AD003EC1C2 /* Development.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XD7DD34FG;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = streamingapp.StreamingAppUITests;
@@ -925,9 +865,9 @@
 		048EEC6B2D560EB0003EC1C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XD7DD34FG;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = streamingapp.StreamingAppUITests;
