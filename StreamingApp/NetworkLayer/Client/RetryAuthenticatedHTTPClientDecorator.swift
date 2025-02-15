@@ -25,11 +25,16 @@ class RetryAuthenticatedHTTPClientDecorator: HTTPClient {
             let (data, response) = try await client.sendRequest(request)
             let status = HTTPResponseStatus(rawValue: response.statusCode)
 
-            if status.shouldRetry() && retriesLeft > 0 {
-                return try await self.sendRequestWithRetries(request: request, retriesLeft: retriesLeft - 1)
-            } else {
-                return (data, response)
+            if retriesLeft > 0, status.shouldRetry() {
+                return try await sendRequestWithRetries(request: request, retriesLeft: retriesLeft - 1)
             }
+
+            if retriesLeft <= 0 {
+                throw RequestError.failRetries
+            }
+
+            return (data, response)
+            
         } catch {
             throw error
         }
