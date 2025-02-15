@@ -4,7 +4,14 @@
 //
 //  Created by Nghia Dao on 6/2/25.
 //
-actor TokenProvider {
+protocol TokenProvider: Actor {
+    func getAccessToken() throws -> String
+    func getRefreshToken() throws -> String
+    func setAccessToken(_ token: String)
+    func refreshToken() async throws 
+}
+
+actor DefaultTokenProvider: TokenProvider {
     private var accessToken: String?
     private var refreshToken: String?
     private let serivce: TokenService
