@@ -34,7 +34,7 @@
 		04CFB5A32D58A293003FF0D6 /* SRTHaishinKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04CFB5A22D58A293003FF0D6 /* SRTHaishinKit */; };
 		04CFB5A62D58A3F8003FF0D6 /* LiveStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFB5A52D58A3F8003FF0D6 /* LiveStreamViewController.swift */; };
 		A31BDC752D566610005CDC6F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A31BDC742D566610005CDC6F /* SnapKit */; };
-		A31BDC7D2D567D2A005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDC7C2D567D08005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift */; };
+		A31BDC7D2D567D2A005CDC6F /* RetryHTTPClientDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDC7C2D567D08005CDC6F /* RetryHTTPClientDecorator.swift */; };
 		A31BDD032D570233005CDC6F /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A31BDD022D570233005CDC6F /* .swiftlint.yml */; };
 		A31BDD042D570233005CDC6F /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A31BDD022D570233005CDC6F /* .swiftlint.yml */; };
 		A31BDD052D570233005CDC6F /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A31BDD022D570233005CDC6F /* .swiftlint.yml */; };
@@ -45,6 +45,7 @@
 		A31BDD1E2D604901005CDC6F /* GenericHTTPResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD1D2D6048EE005CDC6F /* GenericHTTPResponseMapper.swift */; };
 		A31BDD202D60493D005CDC6F /* HTTPResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD1F2D60492C005CDC6F /* HTTPResponseStatus.swift */; };
 		A31BDD242D60539D005CDC6F /* HTTPClientTestsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD232D605399005CDC6F /* HTTPClientTestsHelper.swift */; };
+		A31BDD2A2D605521005CDC6F /* RetryHTTPClientDecoratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD292D60551B005CDC6F /* RetryHTTPClientDecoratorTest.swift */; };
 		FAE958D82D5E38B800169873 /* LiveStreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE958D72D5E38B800169873 /* LiveStreamView.swift */; };
 		FAE958DC2D5E3A3300169873 /* UIControl+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE958DB2D5E3A3300169873 /* UIControl+Combine.swift */; };
 		FAE958DE2D5E3A8800169873 /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE958DD2D5E3A8800169873 /* Publisher+Extension.swift */; };
@@ -96,7 +97,7 @@
 		048EEC902D5616AD003EC1C2 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		048EEC912D5616AD003EC1C2 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		04CFB5A52D58A3F8003FF0D6 /* LiveStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamViewController.swift; sourceTree = "<group>"; };
-		A31BDC7C2D567D08005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryAuthenticatedHTTPClientDecorator.swift; sourceTree = "<group>"; };
+		A31BDC7C2D567D08005CDC6F /* RetryHTTPClientDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryHTTPClientDecorator.swift; sourceTree = "<group>"; };
 		A31BDD022D570233005CDC6F /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		A31BDD072D573642005CDC6F /* TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
 		A31BDD092D573B09005CDC6F /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 		A31BDD1D2D6048EE005CDC6F /* GenericHTTPResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericHTTPResponseMapper.swift; sourceTree = "<group>"; };
 		A31BDD1F2D60492C005CDC6F /* HTTPResponseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseStatus.swift; sourceTree = "<group>"; };
 		A31BDD232D605399005CDC6F /* HTTPClientTestsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientTestsHelper.swift; sourceTree = "<group>"; };
+		A31BDD292D60551B005CDC6F /* RetryHTTPClientDecoratorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryHTTPClientDecoratorTest.swift; sourceTree = "<group>"; };
 		FAE958D72D5E38B800169873 /* LiveStreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamView.swift; sourceTree = "<group>"; };
 		FAE958DB2D5E3A3300169873 /* UIControl+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Combine.swift"; sourceTree = "<group>"; };
 		FAE958DD2D5E3A8800169873 /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extension.swift"; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 		048EEC522D560EB0003EC1C2 /* StreamingAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				A31BDD292D60551B005CDC6F /* RetryHTTPClientDecoratorTest.swift */,
 				A31BDD232D605399005CDC6F /* HTTPClientTestsHelper.swift */,
 				A31BDD182D589B38005CDC6F /* StreamingAppTests-Bridging-Header.h */,
 				A31BDD162D5899E1005CDC6F /* AuthenticatedHTTPClientDecoratorTests.swift */,
@@ -313,7 +316,7 @@
 		A31BDC7B2D567CD4005CDC6F /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				A31BDC7C2D567D08005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift */,
+				A31BDC7C2D567D08005CDC6F /* RetryHTTPClientDecorator.swift */,
 				048EEC6D2D56126C003EC1C2 /* AuthenticatedHTTPClientDecorator.swift */,
 				048EEC702D56126C003EC1C2 /* HTTPClient.swift */,
 			);
@@ -540,7 +543,7 @@
 				A31BDD202D60493D005CDC6F /* HTTPResponseStatus.swift in Sources */,
 				048EEC442D560EAE003EC1C2 /* StreamingApp.xcdatamodeld in Sources */,
 				FAE958DE2D5E3A8800169873 /* Publisher+Extension.swift in Sources */,
-				A31BDC7D2D567D2A005CDC6F /* RetryAuthenticatedHTTPClientDecorator.swift in Sources */,
+				A31BDC7D2D567D2A005CDC6F /* RetryHTTPClientDecorator.swift in Sources */,
 				048EEC3E2D560EAE003EC1C2 /* ViewController.swift in Sources */,
 				048EEC882D56126D003EC1C2 /* OnboardingCoordinator.swift in Sources */,
 				048EEC8A2D56126D003EC1C2 /* DependencyFactory.swift in Sources */,
@@ -572,6 +575,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A31BDD242D60539D005CDC6F /* HTTPClientTestsHelper.swift in Sources */,
+				A31BDD2A2D605521005CDC6F /* RetryHTTPClientDecoratorTest.swift in Sources */,
 				A31BDD172D5899E1005CDC6F /* AuthenticatedHTTPClientDecoratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
